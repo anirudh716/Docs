@@ -9,7 +9,7 @@ function App() {
 
   const toggleTheme = () => setDarkMode((prevMode) => !prevMode);
   return (
-    <div className={`${darkMode ? "bg-zinc-800 text-white" : "bg-zinc-100 text-black"} relative w-full h-screen`} >
+    <div className={`${darkMode ? "bg-zinc-800 text-white" : "bg-zinc-200 text-black"} relative w-full h-screen`} >
       <button onClick={toggleTheme} className="fixed top-5 right-5 p-2 bg-zinc-600 rounded-lg z-50">{darkMode ? <MdLightMode /> : <MdDarkMode />}</button>
       <Background darkMode={darkMode}/>
       <Foreground darkMode={darkMode}/>
